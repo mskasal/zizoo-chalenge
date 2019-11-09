@@ -6,8 +6,8 @@ import './BoatViewers.scss'
 const BoatViewers = ({ views }) => (
   <div className="boat-viewers">
     <div className="boat-viewers__top">
-      <span>HOT</span>
       <strong>
+        <span>HOT</span>
         {views.viewers}
         &nbsp;views
       </strong>

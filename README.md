@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Zizoo challenge
 
-## Available Scripts
+```Hello :)```
 
-In the project directory, you can run:
+## Run project
+```bash
+npm install
+npm start # starts dev server
+npm run build # builds
+```
+## About this challenge;
 
-### `npm start`
+#### How I started?
+- I started this project using `create-react-app`.
+- First, I get `Styleguide` from Zeplin and implemented. However, later I realized that I need color palette, mostly.
+- Second, I created single `BoatCard` component and wrote `SCSS` as design requires.
+- I created a mock data and created a `PropType` for it.
+- After that I pick relatively complex parts and make functional components with them.
+- And a lot of refactoring during this phase :)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### What I assumed?
+- My nearly all assumptions was about data, you can check in [`mock/data/boats.js`](src/mock/data/boats.js) comments.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### What I completed?
+- I created a BoatCard component for mobile and desktop.
+- I
+- I mostly followed design guide except desktop design of `price` part. I liked it better this way.
 
-### `npm test`
+#### What I failed to do?
+- I failed some namings because I am not familiar with boats :)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Which difficulties I faced?
+- Not much except namings, and creating mock data.
 
-### `npm run build`
+#### Problems with design assets.
+- Most of the design assets was missing fonts I guess. So `SVG`s is broken. I downloaded them from https://www.flaticon.com/ and edited them if it is necessary as design requires. 
+- I had to used PNG images for `View Details` button for same reason.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### What this project trying to show? and not?
+- This project shows I am able to implement moderately complex layouts with react. 
+- This project does not demonstrate an ideal, scalable project structure. Little taste of it, maybe.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### I could done better!
+- I could use `styled components` for better composition.
+or
+- I could use better `SCSS` variables and `mixins` for reduce code duplication.
+- I like atomic components, If I had more time I could implement `Atomic design pattern`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thanks for your time.
