@@ -1,0 +1,13 @@
+.boat-document {
+  display: flex;
+  align-items: center;
+
+  .name {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.82;
+    text-align: left;
+    color: var(--charcoal-grey-80);
+    margin-left: 4px;
+  }
+}

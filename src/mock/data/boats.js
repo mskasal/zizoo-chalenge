@@ -1,3 +1,7 @@
+import boat from '../images/boat-image@2x.jpg'
+import boatLow from '../images/boat-image.jpg'
+import boatHigh from '../images/boat-image@3x.jpg'
+
 // Normalized data better for states
 const boats = {
   10001: {
@@ -10,9 +14,9 @@ const boats = {
         // image type can be CARD, DETAIL presents different presentation types and urls for srcset
         type: 'CARD',
         urls: {
-          low: '',
-          normal: '',
-          high: '',
+          low: boatLow,
+          normal: boat,
+          high: boatHigh,
         },
       },
     ],
@@ -35,55 +39,57 @@ const boats = {
         name: 'Split',
       },
     },
-    inWishList: false,
+    inFavorites: false,
     views: {
       viewers: 69,
       time: 24,
       timeSpan: 'hours',
+      timeSpanShort: 'h',
     },
     // Gave type for presenting on different layout of the card
     specs: [
       {
         name: 'length',
         value: '12.04m',
-        type: 'GRID',
+        type: 'SPEC',
       },
       {
         name: 'cabins',
         value: '4',
-        type: 'GRID',
+        type: 'SPEC',
       },
       {
         name: 'guests',
         value: '10',
-        type: 'GRID',
+        type: 'SPEC',
       },
       {
         name: 'sail type',
         value: 'Rolling Mainsail',
-        type: 'LIST',
+        type: 'EQUIPMENT',
       },
       {
         name: 'free extras',
         value: 'AirCon, WiFi, Very Long Extra Description',
-        type: 'LIST',
+        type: 'EQUIPMENT',
       },
       {
-        name: 'Sicherungsshein',
-        type: 'BADGE',
+        name: 'Sicherungsschein',
+        type: 'DOCUMENT',
       },
       {
         name: 'Luxury',
-        type: 'BADGE',
+        type: 'DOCUMENT',
       },
     ],
     reviews: {
-      rating: 10,
+      rating: 2,
       count: 3,
     },
     price: {
-      amount: '1083',
+      amount: '1,083.00',
       currency: '€',
+      interval: 'weekly',
     },
     // I assume there are different booking types
     bookingType: 'DIRECT',

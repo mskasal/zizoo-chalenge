@@ -1,0 +1,39 @@
+@import '../../../shared/styles/mixins';
+
+.boat-equipment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 12px 0 8px 0;
+
+  span {
+    display: block;
+  }
+
+  .value {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.67;
+    color: var(--charcoal-grey);
+
+    &.desktop {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+
+      &.desktop {
+        display: block;
+      }
+    }
+  }
+
+  .name {
+    font-size: 10px;
+    line-height: 1.6;
+    color: var(--charcoal-grey-50);
+    text-transform: uppercase;
+  }
+}

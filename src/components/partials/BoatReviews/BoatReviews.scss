@@ -1,0 +1,16 @@
+.boat-reviews {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0 8px 0;
+
+  .star-rating {
+    line-height: 1;
+  }
+
+  .name {
+    font-size: 10px;
+    line-height: 1.6;
+    color: var(--charcoal-grey-50);
+    text-transform: uppercase;
+  }
+}

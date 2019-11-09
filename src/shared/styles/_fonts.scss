@@ -1,0 +1,46 @@
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans),
+    url(../../assets/fonts/OpenSans/OpenSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans-Semibold),
+    url(../../assets/fonts/OpenSans/OpenSans-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans-Bold),
+    url(../../assets/fonts/OpenSans/OpenSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Quattrocento;
+  src: local(Quattrocento),
+    url(../../assets/fonts/Quattrocento/Quattrocento-Bold.ttf)
+      format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Quattrocento;
+  src: local(Quattrocento-Bold),
+    url(../../assets/fonts/Quattrocento/Quattrocento-Regular.ttf)
+      format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}

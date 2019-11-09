@@ -1,0 +1,166 @@
+@import '../../shared/styles/mixins';
+
+.boat-card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--card-border-color);
+  background-color: var(--white-lightest);
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  &__image-container {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid var(--pinkish-grey);
+
+    &__badges {
+      position: absolute;
+      top: 20px;
+      left: 0;
+
+      .boat-badge {
+        display: block;
+        &:not(:first-child) {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    @include desktop {
+      max-width: 355px;
+      border-bottom: none;
+      border-right: 1px solid var(--pinkish-grey);
+    }
+  }
+
+  &__top {
+    display: flex;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--pinkish-grey);
+
+    .boat-name {
+      border-right: 1px solid var(--pinkish-grey);
+
+      @include desktop {
+        flex-grow: 3;
+      }
+    }
+
+    .boat-viewers {
+      @include desktop {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__middle {
+    border-bottom: solid 1px var(--card-border-color);
+
+    display: flex;
+    text-align: center;
+
+    .boat-spec {
+      flex-grow: 1;
+      border-right: 1px solid var(--card-border-color);
+    }
+
+    .boat-reviews {
+      flex-grow: 2;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    &__extras {
+      display: flex;
+      border-bottom: solid 1px var(--card-border-color);
+      padding: 0 10px;
+      justify-content: space-between;
+
+      @include desktop {
+        flex-direction: column;
+        border-bottom: none;
+        border-right: solid 1px var(--card-border-color);
+        padding: 9px;
+        flex: 3;
+      }
+
+      .documents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include desktop {
+          flex-direction: row;
+          justify-content: flex-start;
+
+          & .boat-document:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .equipments {
+        display: flex;
+        flex-grow: 2;
+        justify-content: space-evenly;
+
+        @include desktop {
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+
+        .boat-equipment {
+          @include desktop {
+            flex-direction: row;
+            padding: 10px 20px 0 0;
+
+            .name {
+              margin-right: 5px;
+              flex: 1;
+            }
+
+            .value {
+              flex: 2;
+            }
+          }
+        }
+      }
+    }
+
+    &__detail {
+      display: flex;
+      justify-content: center;
+
+      @include desktop {
+        flex-direction: column;
+        flex: 2;
+      }
+
+      .boat-price,
+      .boat-view-details {
+        flex: 1 1;
+        padding: 10px;
+      }
+
+      .boat-price {
+        border-right: solid 1px var(--card-border-color);
+        padding-top: 25px;
+
+        @include desktop {
+          border-right: none;
+          border-bottom: solid 1px var(--card-border-color);
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}

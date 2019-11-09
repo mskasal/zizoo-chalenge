@@ -1,0 +1,59 @@
+@import '../../../shared/styles/mixins';
+
+.boat-name {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .title {
+    display: inline-block;
+    width: 98%;
+
+    @include tablet-portrait {
+      width: 85%;
+    }
+
+    @include tablet {
+      width: 80%;
+    }
+
+    @include desktop {
+      width: 70%;
+    }
+
+    h3,
+    span {
+      display: inline-block;
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.25px;
+      color: var(--charcoal-grey);
+    }
+
+    h3 {
+      margin-right: 10px;
+    }
+
+    span.sail-year {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    a {
+      font-size: 12px;
+      line-height: 1.67;
+      text-align: left;
+      color: var(--charcoal-grey);
+      text-decoration: none;
+    }
+  }
+
+  .favorite-button {
+    display: none;
+
+    @include desktop {
+      display: inline-block;
+    }
+  }
+}
